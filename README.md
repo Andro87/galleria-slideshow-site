@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Solution URL](https://your-solution-url.com)
--   Live Site URL: [Live site URL](https://your-live-site-url.com)
+-   Solution URL: [Solution URL](https://github.com/Andro87/galleria-slideshow-site.git)
+-   Live Site URL: [Live site URL](https://galleria-slideshow-site-five.vercel.app/)
 
 ## My process
 
