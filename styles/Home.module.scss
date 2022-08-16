@@ -1,0 +1,11 @@
+.home_container {
+    position: relative;
+}
+.home_container_background {
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: hsla(0, 0%, 0%, 0.85);
+    }
+}

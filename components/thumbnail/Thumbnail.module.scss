@@ -1,0 +1,25 @@
+@use "styles/helpers" as *;
+
+.thumbnail_container {
+    padding: 24px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+    @include breakpoint($medium) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    @include breakpoint($large) {
+        @include container;
+        padding: 40px initial;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.group_wrap {
+    display: grid;
+    gap: 24px;
+    @include breakpoint($medium) {
+        gap: 40px;
+    }
+}

@@ -1,0 +1,19 @@
+@mixin breakpoint($size) {
+    @media screen and (min-width: $size) {
+        @content;
+    }
+}
+
+//max-width for bigger devices
+
+@mixin container {
+    width: 90%;
+    max-width: 85rem;
+    margin: auto;
+}
+
+//hover effect
+
+@mixin transition {
+    transition: all 0.3s ease-in;
+}

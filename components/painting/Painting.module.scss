@@ -1,0 +1,38 @@
+@use "styles/helpers" as *;
+
+.painting_container {
+    display: grid;
+    height: fit-content;
+    cursor: pointer;
+    @include transition;
+    @include breakpoint($large) {
+        max-width: 310px; /*rivedere*/
+    }
+    &:hover {
+        opacity: 0.5;
+    }
+}
+.image {
+    width: 100%;
+    max-width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.painting_info {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-self: end;
+    padding: 0 46px 32px 32px;
+    display: block;
+    span {
+        font-size: 1.5rem;
+        line-height: 1.8125rem;
+        color: var(--white);
+    }
+    p {
+        color: var(--very-light-gray);
+        font-size: 0.8125rem;
+        opacity: 0.75;
+        margin-top: 8px;
+    }
+}

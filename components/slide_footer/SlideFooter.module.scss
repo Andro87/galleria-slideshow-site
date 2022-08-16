@@ -1,0 +1,62 @@
+@use "styles/helpers" as *;
+
+.slide_footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+    @include breakpoint($medium) {
+        padding: 25px 40px;
+    }
+    @include breakpoint($large) {
+        padding: 25px initial;
+        @include container;
+    }
+}
+.slide_footer_wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.slide_info {
+    h2 {
+        margin-bottom: 8px;
+    }
+    p {
+        color: var(--black);
+        opacity: 0.75;
+        font-family: "libre";
+        font-weight: 400;
+        font-size: 0.625rem;
+        @include breakpoint($medium) {
+            font-size: 0.8125rem;
+        }
+    }
+}
+.btn_wrap {
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    svg {
+        &:hover {
+            g {
+                @include transition;
+                stroke: hsla(0, 0%, 0%, 0.5);
+            }
+        }
+    }
+
+    &:disabled {
+        opacity: 0.15;
+    }
+}
+.btn:disabled {
+    opacity: 0.15;
+}
